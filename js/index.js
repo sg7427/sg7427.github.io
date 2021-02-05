@@ -62,10 +62,10 @@ window.addEventListener("resize", function() {
     document.getElementById('discover').style.marginTop = "20px"
     document.getElementById('header').style.height = "auto"
     document.getElementById('tsa').style.marginLeft = "80px"
-    document.getElementById('myCarousel').style.marginTop = "40px"
   } else
     document.getElementById('discover').style.marginBottom = " 50px"
   document.getElementById('myCarousel').style.marginTop = "400px"
+
 }, true);
 //
 function backspace(c_elem, elem, t_list, c_speed = 800, t_speed = 100, w_time = 1000, b_speed = 50) {
@@ -105,3 +105,6 @@ function backspace(c_elem, elem, t_list, c_speed = 800, t_speed = 100, w_time = 
     }
   }, 0);
 }
+$('.carousel').carousel({
+  interval: 2000
+})

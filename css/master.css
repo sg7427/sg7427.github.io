@@ -24,3 +24,42 @@ body {
 	 animation: underline-gradient 2s linear infinite;
 	 background-image: linear-gradient(90deg, rgba(122, 95, 255, 0.8) 15%, #ffd700, rgba(122, 95, 255, 0.8) 85%);
 }
+#discover:hover {
+	background-color: #7e52c7;
+	cursor: s-resize;
+}
+#copres {
+	width: 340px;
+	height: 300px;
+	border-radius: 10px;
+	align-items: center;
+	text-align: center;
+	position: relative;
+  background-image: linear-gradient(
+    to right,
+    rgb(256, 256, 256),
+    rgb(256, 256, 256)
+  );
+  z-index: 1;
+}
+
+#copres::before {
+  position: absolute;
+  content: "";
+  top: 20;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(344, 100%, 50%),
+    hsl(31, 100%, 40%)
+  );
+	z-index: -1;
+	  transition: 0.5s linear;
+	  opacity: 0;
+	}
+
+#copres img {
+	margin-top: 20px;
+}
